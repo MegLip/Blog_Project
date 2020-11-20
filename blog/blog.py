@@ -17,3 +17,5 @@ def generate_entries(how_many=3):
         )
         db.session.add(post)
     db.session.commit()
+    
+generate_entries(how_many=3)
