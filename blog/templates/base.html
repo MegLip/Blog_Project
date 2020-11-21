@@ -1,4 +1,3 @@
-{% block head %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Mój pierwszy blog</title>
+
+    <title>My first blog</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
 
     <!-- Bootstrap core CSS -->
@@ -17,7 +17,7 @@
     
     <style>
         body {
-            padding-top: 5rem;
+            padding-top: 5rem; margin-right:400px; margin-left:400px;
         }
     </style>
 </head>
@@ -25,7 +25,7 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Mój blog</a>
+        <a class="navbar-brand" href="#">My blog</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,8 +42,8 @@
 
     <main role="main" class="container"></main>
 
-    {% endblock %}
 {% block content %}
+{% endblock %}
 
 
 <!-- Bootstrap core JavaScript -->
@@ -58,5 +58,4 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
 
-    {% endblock %}
 </html>
