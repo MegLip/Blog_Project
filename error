@@ -1,0 +1,226 @@
+Microsoft Windows [Version 10.0.18363.1198]
+(c) 2019 Microsoft Corporation. Wszelkie prawa zastrzeżone.
+
+C:\projects\GitTutorial\Blog_Project>heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/4a935414-8dfb-4952-aafe-a7d349deb533?requestor=SFMyNTY.g3QAAAACZAAEZGF0YW0AAAAMNzcuODcuNzQuMjUxZAAGc2lnbmVkbgYAnKWZ-nUB.OpFFUdl_8DwZpBrYNOlKe6xCMcGsrvR66kmU6qsu9_0
+Logging in... done
+Logged in as lipinska.meg@gmail.com
+
+C:\projects\GitTutorial\Blog_Project>
+C:\projects\GitTutorial\Blog_Project>heroku git:remote -a meg-blog-app
+set git remote staging to https://git.heroku.com/meg-blog-app.git
+
+C:\projects\GitTutorial\Blog_Project>git push heroku master
+Enumerating objects: 4716, done.
+Counting objects: 100% (4716/4716), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4584/4584), done.
+Writing objects: 100% (4716/4716), 9.80 MiB | 1.10 MiB/s, done.
+Total 4716 (delta 294), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote: -----> Installing python-3.6.12
+remote: -----> Installing pip 20.1.1, setuptools 47.1.1 and wheel 0.34.2
+remote: -----> Installing SQLite3
+remote: -----> Installing requirements with pip
+remote:        Collecting Faker==4.16.0
+remote:          Downloading Faker-4.16.0-py3-none-any.whl (1.1 MB)
+remote:        Collecting flake8==3.8.3
+remote:          Downloading flake8-3.8.3-py2.py3-none-any.whl (72 kB)
+remote:        Collecting Flask==1.1.2
+remote:          Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB)
+remote:        Collecting Flask-Migrate==2.5.3
+remote:          Downloading Flask_Migrate-2.5.3-py2.py3-none-any.whl (13 kB)
+remote:        Collecting flask-shell-ipython==0.4.1
+remote:          Downloading flask_shell_ipython-0.4.1-py2.py3-none-any.whl (3.5 kB)
+remote:        Collecting Flask-SQLAlchemy==2.4.4
+remote:          Downloading Flask_SQLAlchemy-2.4.4-py2.py3-none-any.whl (17 kB)
+remote:        Collecting Flask-WTF==0.14.3
+remote:          Downloading Flask_WTF-0.14.3-py2.py3-none-any.whl (13 kB)
+remote:        Collecting python-dotenv==0.15.0
+remote:          Downloading python_dotenv-0.15.0-py2.py3-none-any.whl (18 kB)
+remote:        Collecting SQLAlchemy==1.3.20
+remote:          Downloading SQLAlchemy-1.3.20-cp36-cp36m-manylinux2010_x86_64.whl (1.3 MB)
+remote:        Collecting gunicorn==20.0.4
+remote:          Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+remote:        Collecting text-unidecode==1.3
+remote:          Downloading text_unidecode-1.3-py2.py3-none-any.whl (78 kB)
+remote:        Collecting python-dateutil>=2.4
+remote:          Downloading python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+remote:        Collecting mccabe<0.7.0,>=0.6.0
+remote:          Downloading mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
+remote:        Collecting pyflakes<2.3.0,>=2.2.0
+remote:          Downloading pyflakes-2.2.0-py2.py3-none-any.whl (66 kB)
+remote:        Collecting importlib-metadata; python_version < "3.8"
+remote:          Downloading importlib_metadata-3.1.0-py2.py3-none-any.whl (9.3 kB)
+remote:        Collecting pycodestyle<2.7.0,>=2.6.0a1
+remote:          Downloading pycodestyle-2.6.0-py2.py3-none-any.whl (41 kB)
+remote:        Collecting itsdangerous>=0.24
+remote:          Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+remote:        Collecting click>=5.1
+remote:          Downloading click-7.1.2-py2.py3-none-any.whl (82 kB)
+remote:        Collecting Jinja2>=2.10.1
+remote:          Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+remote:        Collecting Werkzeug>=0.15
+remote:          Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+remote:        Collecting alembic>=0.7
+remote:          Downloading alembic-1.4.3-py2.py3-none-any.whl (159 kB)
+remote:        Collecting IPython>=5.0.0
+remote:          Downloading ipython-7.16.1-py3-none-any.whl (785 kB)
+remote:        Collecting WTForms
+remote:          Downloading WTForms-2.3.3-py2.py3-none-any.whl (169 kB)
+remote:        Collecting six>=1.5
+remote:          Downloading six-1.15.0-py2.py3-none-any.whl (10 kB)
+remote:        Collecting zipp>=0.5
+remote:          Downloading zipp-3.4.0-py3-none-any.whl (5.2 kB)
+remote:        Collecting MarkupSafe>=0.23
+remote:          Downloading MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl (27 kB)
+remote:        Collecting python-editor>=0.3
+remote:          Downloading python_editor-1.0.4-py3-none-any.whl (4.9 kB)
+remote:        Collecting Mako
+remote:          Downloading Mako-1.1.3-py2.py3-none-any.whl (75 kB)
+remote:        Collecting decorator
+remote:          Downloading decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+remote:        Collecting prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0
+remote:          Downloading prompt_toolkit-3.0.8-py3-none-any.whl (355 kB)
+remote:        Collecting backcall
+remote:          Downloading backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+remote:        Collecting pygments
+remote:          Downloading Pygments-2.7.2-py3-none-any.whl (948 kB)
+remote:        Collecting traitlets>=4.2
+remote:          Downloading traitlets-4.3.3-py2.py3-none-any.whl (75 kB)
+remote:        Collecting pickleshare
+remote:          Downloading pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+remote:        Collecting pexpect; sys_platform != "win32"
+remote:          Downloading pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+remote:        Collecting jedi>=0.10
+remote:          Downloading jedi-0.17.2-py2.py3-none-any.whl (1.4 MB)
+remote:        Collecting wcwidth
+remote:          Downloading wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+remote:        Collecting ipython-genutils
+remote:          Downloading ipython_genutils-0.2.0-py2.py3-none-any.whl (26 kB)
+remote:        Collecting ptyprocess>=0.5
+remote:          Downloading ptyprocess-0.6.0-py2.py3-none-any.whl (39 kB)
+remote:        Collecting parso<0.8.0,>=0.7.0
+remote:          Downloading parso-0.7.1-py2.py3-none-any.whl (109 kB)
+remote:        Installing collected packages: text-unidecode, six, python-dateutil, Faker, mccabe, pyflakes, zipp, importlib-metadata, pycodestyle, flake8, itsdangerous, click, MarkupSafe, Jinja2, Werkzeug, Flask, SQLAlchemy, Flask-SQLAlchemy, python-editor, Mako, alembic, Flask-Migrate, decorator, wcwidth, prompt-toolkit, backcall, pygments, ipython-genutils, traitlets, pickleshare, ptyprocess, pexpect, parso, jedi, IPython, flask-shell-ipython, WTForms, Flask-WTF, python-dotenv, gunicorn
+remote:        Successfully installed Faker-4.16.0 Flask-1.1.2 Flask-Migrate-2.5.3 Flask-SQLAlchemy-2.4.4 Flask-WTF-0.14.3 IPython-7.16.1 Jinja2-2.11.2 Mako-1.1.3 MarkupSafe-1.1.1 SQLAlchemy-1.3.20 WTForms-2.3.3 Werkzeug-1.0.1 alembic-1.4.3 backcall-0.2.0 click-7.1.2 decorator-4.4.2 flake8-3.8.3 flask-shell-ipython-0.4.1 gunicorn-20.0.4 importlib-metadata-3.1.0 ipython-genutils-0.2.0 itsdangerous-1.1.0 jedi-0.17.2 mccabe-0.6.1 parso-0.7.1 pexpect-4.8.0 pickleshare-0.7.5 prompt-toolkit-3.0.8 ptyprocess-0.6.0 pycodestyle-2.6.0 pyflakes-2.2.0 pygments-2.7.2 python-dateutil-2.8.1 python-dotenv-0.15.0 python-editor-1.0.4 six-1.15.0 text-unidecode-1.3 traitlets-4.3.3 wcwidth-0.2.5 zipp-3.4.0
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 66.8M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://meg-blog-app.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/meg-blog-app.git
+ * [new branch]      master -> master
+
+C:\projects\GitTutorial\Blog_Project>heroku logs
+2020-11-24T14:14:59.734481+00:00 app[web.1]: self.__connect(first_connect_check=True)
+2020-11-24T14:14:59.734482+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+2020-11-24T14:14:59.734482+00:00 app[web.1]: pool.logger.debug("Error on connect(): %s", e)
+2020-11-24T14:14:59.734482+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+2020-11-24T14:14:59.734483+00:00 app[web.1]: with_traceback=exc_tb,
+2020-11-24T14:14:59.734483+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+2020-11-24T14:14:59.734483+00:00 app[web.1]: raise exception
+2020-11-24T14:14:59.734484+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+2020-11-24T14:14:59.734484+00:00 app[web.1]: connection = pool._invoke_creator(self)
+2020-11-24T14:14:59.734485+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+2020-11-24T14:14:59.734485+00:00 app[web.1]: return dialect.connect(*cargs, **cparams)
+2020-11-24T14:14:59.734485+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 493, in connect
+2020-11-24T14:14:59.734486+00:00 app[web.1]: return self.dbapi.connect(*cargs, **cparams)
+2020-11-24T14:14:59.734486+00:00 app[web.1]: sqlite3.OperationalError: unable to open database file
+2020-11-24T14:14:59.734487+00:00 app[web.1]:
+2020-11-24T14:14:59.734487+00:00 app[web.1]: The above exception was the direct cause of the following exception:
+2020-11-24T14:14:59.734487+00:00 app[web.1]:
+2020-11-24T14:14:59.734488+00:00 app[web.1]: Traceback (most recent call last):
+2020-11-24T14:14:59.734488+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+2020-11-24T14:14:59.734489+00:00 app[web.1]: response = self.full_dispatch_request()
+2020-11-24T14:14:59.734489+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+2020-11-24T14:14:59.734489+00:00 app[web.1]: rv = self.handle_user_exception(e)
+2020-11-24T14:14:59.734490+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+2020-11-24T14:14:59.734490+00:00 app[web.1]: reraise(exc_type, exc_value, tb)
+2020-11-24T14:14:59.734491+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+2020-11-24T14:14:59.734491+00:00 app[web.1]: raise value
+2020-11-24T14:14:59.734491+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+2020-11-24T14:14:59.734492+00:00 app[web.1]: rv = self.dispatch_request()
+2020-11-24T14:14:59.734492+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+2020-11-24T14:14:59.734493+00:00 app[web.1]: return self.view_functions[rule.endpoint](**req.view_args)
+2020-11-24T14:14:59.734493+00:00 app[web.1]: File "/app/blog/routes.py", line 12, in index
+2020-11-24T14:14:59.734493+00:00 app[web.1]: return render_template("homepage.html", all_posts=all_posts)
+2020-11-24T14:14:59.734494+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+2020-11-24T14:14:59.734494+00:00 app[web.1]: ctx.app,
+2020-11-24T14:14:59.734495+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+2020-11-24T14:14:59.734495+00:00 app[web.1]: rv = template.render(context)
+2020-11-24T14:14:59.734495+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+2020-11-24T14:14:59.734496+00:00 app[web.1]: self.environment.handle_exception()
+2020-11-24T14:14:59.734496+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+2020-11-24T14:14:59.734497+00:00 app[web.1]: reraise(*rewrite_traceback_stack(source=source))
+2020-11-24T14:14:59.734497+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+2020-11-24T14:14:59.734498+00:00 app[web.1]: raise value.with_traceback(tb)
+2020-11-24T14:14:59.734498+00:00 app[web.1]: File "/app/blog/templates/homepage.html", line 1, in top-level template code
+2020-11-24T14:14:59.734498+00:00 app[web.1]: {% extends "base.html" %}
+2020-11-24T14:14:59.734499+00:00 app[web.1]: File "/app/blog/templates/base.html", line 87, in top-level template code
+2020-11-24T14:14:59.734499+00:00 app[web.1]: {% block content %}
+2020-11-24T14:14:59.734500+00:00 app[web.1]: File "/app/blog/templates/homepage.html", line 5, in block "content"
+2020-11-24T14:14:59.734500+00:00 app[web.1]: {% for post in all_posts %}
+2020-11-24T14:14:59.734507+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+2020-11-24T14:14:59.734507+00:00 app[web.1]: return self._execute_and_instances(context)
+2020-11-24T14:14:59.734508+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3557, in _execute_and_instances
+2020-11-24T14:14:59.734508+00:00 app[web.1]: querycontext, self._connection_from_session, close_with_result=True
+2020-11-24T14:14:59.734508+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3572, in _get_bind_args
+2020-11-24T14:14:59.734508+00:00 app[web.1]: mapper=self._bind_mapper(), clause=querycontext.statement, **kw
+2020-11-24T14:14:59.734509+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+2020-11-24T14:14:59.734509+00:00 app[web.1]: conn = self.session.connection(**kw)
+2020-11-24T14:14:59.734509+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1141, in connection
+2020-11-24T14:14:59.734510+00:00 app[web.1]: execution_options=execution_options,
+2020-11-24T14:14:59.734510+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1147, in _connection_for_bind
+2020-11-24T14:14:59.734510+00:00 app[web.1]: engine, execution_options
+2020-11-24T14:14:59.734510+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+2020-11-24T14:14:59.734511+00:00 app[web.1]: conn = bind._contextual_connect()
+2020-11-24T14:14:59.734511+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+2020-11-24T14:14:59.734511+00:00 app[web.1]: self._wrap_pool_connect(self.pool.connect, None),
+2020-11-24T14:14:59.734514+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2340, in _wrap_pool_connect
+2020-11-24T14:14:59.734514+00:00 app[web.1]: e, dialect, self
+2020-11-24T14:14:59.734515+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1584, in _handle_dbapi_exception_noconnection
+2020-11-24T14:14:59.734515+00:00 app[web.1]: sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+2020-11-24T14:14:59.734515+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+2020-11-24T14:14:59.734516+00:00 app[web.1]: raise exception
+2020-11-24T14:14:59.734516+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+2020-11-24T14:14:59.734516+00:00 app[web.1]: return fn()
+2020-11-24T14:14:59.734516+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+2020-11-24T14:14:59.734517+00:00 app[web.1]: return _ConnectionFairy._checkout(self)
+2020-11-24T14:14:59.734517+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+2020-11-24T14:14:59.734517+00:00 app[web.1]: fairy = _ConnectionRecord.checkout(pool)
+2020-11-24T14:14:59.734517+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+2020-11-24T14:14:59.734518+00:00 app[web.1]: rec = pool._do_get()
+2020-11-24T14:14:59.734518+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 241, in _do_get
+2020-11-24T14:14:59.734518+00:00 app[web.1]: return self._create_connection()
+2020-11-24T14:14:59.734519+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+2020-11-24T14:14:59.734519+00:00 app[web.1]: return _ConnectionRecord(self)
+2020-11-24T14:14:59.734519+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+2020-11-24T14:14:59.734520+00:00 app[web.1]: self.__connect(first_connect_check=True)
+2020-11-24T14:14:59.734520+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+2020-11-24T14:14:59.734520+00:00 app[web.1]: pool.logger.debug("Error on connect(): %s", e)
+2020-11-24T14:14:59.734520+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+2020-11-24T14:14:59.734521+00:00 app[web.1]: with_traceback=exc_tb,
+2020-11-24T14:14:59.734521+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+2020-11-24T14:14:59.734521+00:00 app[web.1]: raise exception
+2020-11-24T14:14:59.734521+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+2020-11-24T14:14:59.734521+00:00 app[web.1]: connection = pool._invoke_creator(self)
+2020-11-24T14:14:59.734521+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+2020-11-24T14:14:59.734522+00:00 app[web.1]: return dialect.connect(*cargs, **cparams)
+2020-11-24T14:14:59.734522+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 493, in connect
+2020-11-24T14:14:59.734522+00:00 app[web.1]: return self.dbapi.connect(*cargs, **cparams)
+2020-11-24T14:14:59.734522+00:00 app[web.1]: sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+2020-11-24T14:14:59.734523+00:00 app[web.1]: (Background on this error at: http://sqlalche.me/e/13/e3q8)
+2020-11-24T14:14:59.735468+00:00 app[web.1]: 10.11.171.245 - - [24/Nov/2020:14:14:59 +0000] "GET / HTTP/1.1" 500 290 "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36"
+2020-11-24T14:14:59.736566+00:00 heroku[router]: at=info method=GET path="/" host=meg-blog-app.herokuapp.com request_id=2c50e65d-ada2-4760-ae88-a63b71695476 fwd="77.87.74.251" dyno=web.1 connect=1ms service=41ms status=500 bytes=470 protocol=https
+
+C:\projects\GitTutorial\Blog_Project>
